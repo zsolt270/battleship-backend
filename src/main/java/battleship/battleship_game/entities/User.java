@@ -1,9 +1,6 @@
 package battleship.battleship_game.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import javax.management.relation.Role;
@@ -25,6 +22,7 @@ public class User {
     private Boolean verified;
     private Boolean deleted;
     private LocalDateTime created_at;
+    @Enumerated(EnumType.STRING)
     private Role role;
     private String firstname;
     private String lastname;
