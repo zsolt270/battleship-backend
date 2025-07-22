@@ -2,7 +2,6 @@ package battleship.battleship_game.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import javax.management.relation.Role;
 import java.time.LocalDateTime;
 
