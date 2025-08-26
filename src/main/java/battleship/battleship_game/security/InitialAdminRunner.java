@@ -22,7 +22,7 @@ public class InitialAdminRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         if(userService.checkAdminExists()) {
-            log.info("The admin already exists in the database, skipping initialization...");
+            log.info("The initial admin already exists in the database, skipping initialization...");
             return;
         }
 
