@@ -3,7 +3,7 @@ package battleship.battleship_game.enums;
 /**
  *  This enum contains all the potential user roles.
  */
-public enum Roles {
+public enum Role {
 
     /**
      * Default user role.
@@ -13,5 +13,5 @@ public enum Roles {
     /**
      * Admin role, that has more privileges than the default user.
      */
-    ADMIN;
+    ADMIN
 }
