@@ -17,7 +17,6 @@ public class InitialAdminRunner implements CommandLineRunner {
     final private UserService userService;
     final private SecurityConfiguration securityConfiguration;
 
-
     @Override
     public void run(String... args) throws Exception {
 
@@ -26,7 +25,7 @@ public class InitialAdminRunner implements CommandLineRunner {
             return;
         }
 
-        final User initialAdmin =  User.builder()
+        final User initialAdmin = User.builder()
                 .username("admin1")
                 .email("admin1@admin.com")
                 .password(securityConfiguration.passwordEncoder().encode(securityConfiguration.initialAdminPassword))
