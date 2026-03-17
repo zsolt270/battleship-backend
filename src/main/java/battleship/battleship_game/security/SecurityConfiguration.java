@@ -21,13 +21,13 @@ public class SecurityConfiguration {
     @Value("${security.initialAdminPassword}")
     public String initialAdminPassword;
 
-    //TODO adding more setup
+    //TODO adding more setup  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests(auth -> auth.requestMatchers("*").permitAll())
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .formLogin(formLogin -> formLogin.disable())
-                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+                .cors(cors -> cors.configurationSource(CORSCONFIGURATION()))
                 .build();
     }
 
@@ -37,7 +37,8 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
+    //public CorsConfigurationSource corsConfigurationSource() {
+        public CorsConfigurationSource CORSCONFIGURATION() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type"));
         corsConfiguration.setAllowedMethods(Arrays.asList("GET", "DELETE", "PUT","PATCH", "POST", "OPTIONS"));
@@ -49,7 +50,7 @@ public class SecurityConfiguration {
         source.registerCorsConfiguration("/**", corsConfiguration);
 
         return source;
-    }
+        }
 }
 
 
