@@ -42,6 +42,6 @@ public class InitialAdminRunner implements CommandLineRunner {
     }
 
     public void SOMETHINGJUSTTOCHECKTHECHECKSTYLE(){
-        String valami = "opsajkdposakjpodkaspőokdpaoskdposakőpodksapőokdaőspokpődoskaopőkdpoőaksdpőokasopődkpőaokdőopaksőpdoksapőodkőpoakdpoőakőopdkopőakdpoőakopdkakpoődksőpoakdpőosakdpőosakpőodkaőposdkapőokdőpo akpőokdpőoakspoődkasőposdkőpasokdőpoaksdőopkaőpodksaőpodkőpaokdőposakpoődkapőodioajfpoinqwinqwmpőomqopődmőopqw,dopq,aőpodq,pőo,qwpod"
+        String valami = "opsajkdposakjpodkaspőokdpaoskdposakőpodksapőokdaőspokpődossdadasdaskaopőkdpoőaksdpőokasopődkpőaokdőopaksőpdoksapőodkőpoakdpoőakőopdkopőakdpoőakopdkakpoődksőpoakdpőosakdpőosakpőodkaőposdkapőokdőpo akpőokdpőoakspoődkasőposdkőpasokdőpoaksdőopkaőpodksaőpodkőpaokdőposakpoődkapőodioajfpoinqwinqwmpőomqopődmőopqw,dopq,aőpodq,pőo,qwpod"
     }
 }
