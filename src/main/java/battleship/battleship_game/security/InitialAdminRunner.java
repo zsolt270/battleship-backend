@@ -19,7 +19,6 @@ public class InitialAdminRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         if(userService.checkAdminExists()) {
             log.info("The initial admin already exists in the database, skipping initialization...");
             return;
@@ -40,5 +39,9 @@ public class InitialAdminRunner implements CommandLineRunner {
                 .build();
 
         userService.save(initialAdmin);
+    }
+
+    public void SOMETHINGJUSTTOCHECKTHECHECKSTYLE(){
+        String valami = "opsajkdposakjpodkaspőokdpaoskdposakőpodksapőokdaőspokpődoskaopőkdpoőaksdpőokasopődkpőaokdőopaksőpdoksapőodkőpoakdpoőakőopdkopőakdpoőakopdkakpoődksőpoakdpőosakdpőosakpőodkaőposdkapőokdőpo akpőokdpőoakspoődkasőposdkőpasokdőpoaksdőopkaőpodksaőpodkőpaokdőposakpoődkapőodioajfpoinqwinqwmpőomqopődmőopqw,dopq,aőpodq,pőo,qwpod"
     }
 }
